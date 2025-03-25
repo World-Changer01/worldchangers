@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FAQs</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../images/logo.png" type="image/x-icon">
+    <!-- Swiper JS CSS-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+    <!-- Scroll Reveal -->
+    <link rel="stylesheet" href="../css/scrollreveal.min.js">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles 03.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- ...existing code... -->
+<style>
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    .center-content {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
+    .faq-item {
+        margin-bottom: 20px;
+    }
+    .faq-item h3 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .faq-item p {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    .about-buttons {
+        margin-top: 20px;
+    }
+    .submit-question-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .submit-question-form label {
+        font-weight: bold;
+    }
+    .submit-question-form input,
+    .submit-question-form textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .submit-question-form textarea {
+        resize: none;
+    }
+    .submit-question-form button {
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .submit-question-form button:hover {
+        background-color: #218838;
+    }
+    .menu-content.show {
+        display: block;
+    }
+    .menu-content {
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container flex">
+                <a href="#" class="logo-content flex">
+                    <span class="logo-text">WorldChangers</span>
+                </a>
+    
+                <div class="menu-content">
+                        <ul class="menu-list flex">
+                                <li><a href="../index.html" class="nav-link">home</a></li>
+                                <li><a href="#" class="nav-link active-navlink">about</a></li>
+                                <li><a href="../html/gallery.html" class="nav-link">Gallery</a></li>
+                                <li><a href="../index.html#contribute" class="nav-link">contribute</a></li> 
+                                <li><a href="../index.html#videos" class="nav-link">Videos</a></li>
+                        </ul>
+    
+                        <div class="media-icons flex">
+                              <!--  <a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
+                                <a href="https://twitter.com/i/flow/login"><i class='bx bxl-twitter' ></i></a>
+                                <a href="https://www.instagram.com/accounts/login"><i class='bx bxl-instagram-alt' ></i></a>-->
+                                <a href="https://github.com/login"><i class='bx bxl-github'></i></a>
+                                <a href="https://www.youtube.com/@World-Changer01"><i class='bx bxl-youtube'></i></a>
+                        </div>
+    
+                        <i class='bx bx-x navClose-btn'></i>
+                    </div>
+                    
+                    <div class="contact-content flex">
+                        <i class='bx bx-phone phone-icon' ></i>
+                        <span class="phone-number">+256761504634</span>
+                    </div>
+    
+                    <i class='bx bx-menu navOpen-btn'></i>
+            </nav>
+    
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="section faqs" id="faqs">
+            <div class="container">
+                <div class="faqs-text">
+                    <h4 class="section-subtitle"><i>FAQs</i></h4>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Here are some of the most common questions we receive. If you have any other questions, feel free to reach out to us.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is WorldChangers?</h3>
+                    <p>WorldChangers is a community dedicated to making the world a better place through sustainable living, education, and innovation. We provide lifehack information and resources to help individuals make meaningful changes in their daily lives.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I contribute to WorldChangers?</h3>
+                    <p>You can contribute to WorldChangers by sharing our content, and implementing sustainable practices in your daily life. Additionally, you can support us by donating or volunteering your time and ideas.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What kind of content do you provide?</h3>
+                    <p>We provide a variety of content including informative articles, and engaging videos. Our content covers topics such as sustainable living, environmental conservation, and innovative solutions for a better future.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I stay updated with WorldChangers?</h3>
+                    <p>You can stay updated with WorldChangers by subscribing to our newsletter, following us on social media, and regularly visiting our website for the latest updates and content.</p>
+                </div>
+                <div class="about-buttons flex">
+                    <form action="submit_question.php" method="post" class="submit-question-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="question">Your Question:</label>
+                        <textarea id="question" name="question" rows="4" required></textarea>
+                        
+                        <button type="submit" class="button">Submit Question</button>
+                    </form>
+                </div>
+                <div class="about-buttons flex">
+                    <!--<button class="button">If You've Got Any Question</button>
+                    <a href="mailto:world_changers@outlook.com?subject=Re:%20I%20have%20a%queation." class="about-link flex">
+                        <span class="link-text">ask it here</span>
+                        <i class='bx bx-right-arrow-alt about-arrowIcon'></i>
+                    </a>-->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="section footer">
+        <div class="footer-container container">
+            <div class="footer-content">
+                <a href="../index.html#home" class="logo-content flex">
+                    <span class="logo-text">WorldChangersInc.</span>
+                </a>
+                <p class="content-description">"If we work together, we <em>will</em> make the world a better place."<br><em>Joel Kajubi</em>, Founder</p>
+                <div class="footer-location flex">
+                    <i class='bx bx-map map-icon'></i>
+                    <div class="location-text">
+                        KakoolaHighSchool <br>P.O.Box 225<br>Wobulenzi(U)
+                    </div>
+                </div>
+            </div>
+            <div class="footer-linkContent">
+                <ul class="footer-links">
+                    <h4 class="footerLinks-title">Facility</h4>
+                    <li><a href="html/Resource Directory.html" class="footer-link">Resource Directory</a></li>
+                    <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                    <li><a href="videos.html" class="footer-link">Videos</a></li>
+                </ul>
+                <ul class="footer-links">
+                    <h4 class="footerLinks-title">Support</h4>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="FAQs.html" class="footer-link">FAQs</a></li>
+                    <li><a href="help_us.html" class="footer-link">Help Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyRight">&#169; WorldChangers Inc. All rights reserved</div>
+    </footer>
+
+    <!-- JavaScript to handle the navigation menu -->
+    <script>
+        const navOpenBtn = document.querySelector('.navOpen-btn');
+        const navCloseBtn = document.querySelector('.navClose-btn');
+        const menuContent = document.querySelector('.menu-content');
+
+        navOpenBtn.addEventListener('click', () => {
+            menuContent.classList.add('show');
+        });
+
+        navCloseBtn.addEventListener('click', () => {
+            menuContent.classList.remove('show');
+        });
+    </script>
+</body>
+</html>
